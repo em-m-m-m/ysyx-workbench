@@ -11,7 +11,7 @@
       Vexample* top = new  Vexample{contextp};
       VerilatedFstC* tfp = new VerilatedFstC;
       top->trace(tfp, 99);
-      tfp->open("wave.vcd");
+      tfp->open("wave.fst");
       for(int i = 0; i< 10; i++) {
          int a = rand() & 1;
          int b = rand() & 1;
