@@ -4,7 +4,7 @@ all:
 sim:
 	$(call git_commit, "sim RTL") # DO NOT REMOVE THIS LINE!!!
 	@echo "Write this Makefile by your self."
-	rm -rf obj_dir
+	rm -rf obj_dir wave.fst wave.vcd
 	verilator --cc --exe --build --trace-fst main.cpp example.v
 	./obj_dir/Vexample
 	gtkwave wave.fst &
