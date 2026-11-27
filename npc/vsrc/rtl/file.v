@@ -1,9 +1,9 @@
 //register file 
-moudle file(
+module file(
 	input clk,
 	input rst,
 	input [7:0] in,
-	output reg [7:0] out,
+	output reg [7:0] out
 );
 reg #(8,0) pc_reg(
 	.clk(clk),
